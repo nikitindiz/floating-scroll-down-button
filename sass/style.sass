@@ -1,0 +1,70 @@
+@import "bourbon"
+@import "font-awesome"
+
+$light-blue-color : #2a7fbf
+$dark-blue-color : #004deb
+$gray-color : #6b696a
+$dark-gray : #535152
+$very-dark-gray : #999
+$max-icons-resolution: 1320px
+$toolbar-border-width : 1px
+$toolbar-padding : 20px
+$toolbar-width : 300px
+$toolbar-full-width : $toolbar-width + ($toolbar-padding * 2) + $toolbar-border-width
+$toolbar-heigh : 300px
+$toolbar-slide-label-size : 20px
+$toolbar-border-radius : 4px
+$toolbar-collapsed-shift : 30px
+$toolbar-menu-padding : 35px
+
+
+// #an-bp-slide-menu
+.an-bp-closed-menu
+    width: $toolbar-width
+    // height: $toolbar-heigh
+    background-color: $gray-color
+    border-width: $toolbar-border-width
+    border-style: solid
+    border-color: white
+    color: white
+    position: fixed
+    top: $toolbar-padding
+    // transform: translate(0,-50%)
+    // -webkit-transform: translate(0,-50%)
+    // -moz-transform: translate(0,-50%)
+    // -o-transform: translate(0,-50%)
+    // -ms-transform: translate(0,-50%)
+    -webkit-border-radius: $toolbar-border-radius 0 0 $toolbar-border-radius
+    -moz-border-radius: $toolbar-border-radius 0 0 $toolbar-border-radius
+    -o-border-radius: $toolbar-border-radius 0 0 $toolbar-border-radius
+    -ms-border-radius: $toolbar-border-radius 0 0 $toolbar-border-radius
+    -webkit-box-shadow: 0 0 4px black;
+    -moz-box-shadow: 0 0 4px black;
+    -o-box-shadow: 0 0 4px black;
+    -ms-box-shadow: 0 0 4px black;
+    box-shadow: 0 0 4px black;
+    border-radius: $toolbar-border-radius 0 0 $toolbar-border-radius    
+    right: -($toolbar-width - $toolbar-slide-label-size - ($toolbar-padding * 2) + $toolbar-collapsed-shift)
+    z-index: 3000
+    padding: $toolbar-padding
+    padding-left: $toolbar-menu-padding
+    transition: right 0.2s ease, height 0.2s ease
+    max-height: 100%
+    overflow-y: auto
+    height: $toolbar-padding * 2
+    &.an-bp-slide
+        right: -$toolbar-border-width
+        height: inherit
+    .ap-bp-button-wrapper
+        float: left
+        a
+            display: block
+            position: absolute
+            left: $toolbar-menu-padding / 4
+            top: $toolbar-menu-padding / 4
+            color: white
+            &:hover
+                color: #999
+//    .an-bp-widget-container
+        margin-left: 20px
+        

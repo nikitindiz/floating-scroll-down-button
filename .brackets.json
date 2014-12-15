@@ -1,0 +1,20 @@
+{
+    "path": {
+        "sass/style.sass": {
+            "sass.enabled": true,
+            "sass.options": {
+                "includePaths": [
+                    "../bower_components/bourbon/dist/",
+                    "../scss/"
+                ],
+                "outputDir": "../css/",
+                "imagePath": null,
+                "sourceComments": "map",
+                "outputStyle": "nested"
+            },
+            "linting.collapsed": false,
+            "brackets-git.gitPath": "C:\\Program Files (x86)\\Git\\cmd\\git.exe",
+            "bigeyex.bracketsSFTPUpload.enabled": true
+        }
+    }
+}
